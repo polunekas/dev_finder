@@ -2,6 +2,7 @@
   "name": "ts-course-proj-2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://polunekas.github.io/dev_finder",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -10,7 +11,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "component": "generate-react component"
+    "component": "generate-react component",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -32,9 +35,10 @@
   },
   "devDependencies": {
     "@types/node": "16.7.13",
-    "@types/react": "18.0.7",
+    "@types/react": "^18.0.7",
     "@types/react-dom": "18.0.6",
     "generate-react-cli": "^7.3.0",
+    "gh-pages": "^5.0.0",
     "sass": "^1.54.5",
     "typescript": "4.4.2"
   }

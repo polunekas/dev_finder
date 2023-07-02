@@ -1,1 +1,1 @@
-# TypeScript курс. Проект GitHub user finder
+Deploy: https://polunekas.github.io/dev_finder/
